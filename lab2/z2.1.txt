@@ -1,0 +1,29 @@
+---Podaj definicję pojęć: polimorfizm dynamiczny i statyczny, klasa abstrakcyjna, funkcja wirtualna.---
+
+1) Polimorfizm dynamiczny 
+- możliwość decydowania o tym jaka funkcja zostanie wywołana pod daną nazwą 
+nie w momencie kompilacji (czyli pisania kodu), ale w samym momecie wywołania.
+Polega przede wszystkim na dziedzieczeniu i funkcjach wirtualnych
+-umożliwia pracę ze zbiorami niejednorodnych obiektów i korzysta z polimorfizmu dynamicznego
+-wymaga wspólnej hierarchii dziedziczenia
+-wymusza korzystanie ze wskaźników lub referencji i funkcji wirtualnych
+-zazwyczaj generuje mniejszy kod.
+
+2) Polimorfizm statyczny - 
+- polega na uzywaniu szablonow (wystarczy aby pewne klasy posiadaly po prostu pewna metode)
+-bezpiecznie obsługuje jednorodne zbiory obiektów
+-nie trzeba korzystać ze wskaźników i referencji ani funkcji wirtualnych
+-nie musimy korzystać ze wspólnej hierarchii dziedziczenia.
+
+3) Klasa abstrakcyjna 
+- działają jako wyrażenia ogólnych pojęć, z których można uzyskać bardziej szczegółowe klasy. 
+Nie można utworzyć obiektu typu klasy abstrakcyjnej. Można jednak użyć wskaźników i odwołań do typów klas abstrakcyjnych.
+Klasę abstrakcyjną można utworzyć, deklarując co najmniej jedną czystą wirtualną funkcję składową. 
+Jest to funkcja wirtualna zadeklarowana przy użyciu czystej składni specyfikatora (= 0). 
+Klasy pochodzące z klasy abstrakcyjnej muszą implementować czystą funkcję wirtualną lub też są abstrakcyjne klasy.
+
+4) Funkcja wirtualna
+-  jest funkcją składową, która powinna zostać ponownie zdefiniowana w klasach pochodnych. 
+Przy odwoływaniu się do obiektu klasy pochodnej za pomocą wskaźnika lub odwołania do klasy bazowej, 
+można wywołać funkcję wirtualną dla tego obiektu i wykonać wersję klasy pochodnej tej funkcji.
+Funkcje wirtualne zapewniają wywołanie poprawnej funkcji dla obiektu, bez względu na wyrażenie użyte do wywołania funkcji.
